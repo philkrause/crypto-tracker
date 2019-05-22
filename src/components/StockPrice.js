@@ -10,7 +10,7 @@ class StockPrice extends Component {
   componentDidMount() {
     console.log('component mounted')
     this.getStockApi()
-    setInterval(this.getStockApi, 60000)
+    setInterval(this.getStockApi, 10000)
   }
 
   getStockApi = () => {
@@ -25,6 +25,8 @@ class StockPrice extends Component {
         })
       })
   }
+
+  comparePrice = () => {}
 
   render() {
     console.log('rendering new price')

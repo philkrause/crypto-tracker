@@ -8,7 +8,7 @@ class NavBar extends Component {
           <div className="nav-bar">
             <p>Sym</p>
             <p>Coin</p>
-            <p>Current Price</p>
+            <p>Price</p>
             <p>1hour</p>
             <p>24Hour</p>
             <p>7Day</p>

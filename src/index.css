@@ -19,6 +19,7 @@ body {
 .header-class {
   display: flex;
   height: 8rem;
+  width: 100vw;
   justify-content: center;
   background-color: rgb(99, 99, 160);
   color: rgb(255, 255, 255);
@@ -36,12 +37,12 @@ body {
 }
 
 .nav-bar {
-  margin-top: 1rem;
   display: flex;
+  justify-content: center;
+  margin-top: 1rem;
   align-items: center;
   height: 1.4rem;
-  width: 67.5rem;
-  margin-left: 5rem;
+  width: 100vw;
 }
 
 .nav-bar p {
@@ -49,20 +50,31 @@ body {
   color: black;
   font-family: 'Fredericka the Great', cursive;
   text-align: center;
-  padding: 3rem 0rem 1rem 4rem;
+}
+
+.nav-bar p:nth-child(1) {
+  width: 8vw;
 }
 
 .nav-bar p:nth-child(2) {
-  padding-right: 6.5rem;
+  width: 10vw;
+}
+.nav-bar p:nth-child(3) {
+  width: 15vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 .nav-bar p:nth-child(4) {
-  padding-right: 1.5rem;
+  width: 15vw;
+  padding-right: 1.5vw;
 }
 
 .nav-bar p:nth-child(5) {
-  padding-right: 1.5rem;
+  width: 15vw;
 }
-
+.nav-bar p:nth-child(6) {
+  width: 15vw;
+}
 .main-container {
   display: flex;
   justify-content: center;
@@ -86,7 +98,7 @@ body {
 .stock-container h1 {
   text-align: center;
   height: 1.4rem;
-  width: 2.2rem;
+  width: 2vw;
   align-content: center;
   padding-top: 1rem;
   font-family: 'IBM Plex Mono', monospace;
@@ -102,19 +114,18 @@ body {
 .stock-container h2 {
   text-align: center;
   height: 1.4rem;
-  width: 8rem;
+  width: 8vw;
   padding-top: 1rem;
   font-family: 'Fredericka the Great', cursive;
   font-size: 1.5rem;
   border-bottom: dotted rgb(194, 189, 189) 1px;
-  border: dotted rgb(252, 0, 0) 0 1px 0 1px;
 }
 
 .stock-container h3 {
   text-align: left;
   font-size: 1.5rem;
   height: 1.4rem;
-  width: 15rem;
+  width: 10vw;
   align-items: center;
   padding-top: 1rem;
   font-family: 'IBM Plex Mono', monospace;
@@ -127,8 +138,37 @@ body {
   font-family: 'Inconsolata', monospace;
   color: black;
   height: 1.4rem;
-  width: 10rem;
+  width: 15vw;
   align-items: center;
   padding-top: 1rem;
   border-bottom: dotted rgb(194, 189, 189) 1px;
+}
+
+@media (max-width: 700px) {
+  .stock-container h3 {
+    text-align: left;
+    font-size: 0rem;
+    height: 1.4rem;
+    width: 10vw;
+    align-items: center;
+    padding-top: 1rem;
+    font-family: 'IBM Plex Mono', monospace;
+    border-bottom: dotted rgb(194, 189, 189) 1px;
+  }
+
+  .stock-container h1 {
+    font-size: 0;
+    text-align: center;
+    height: 1.4rem;
+    width: 2vw;
+    align-content: center;
+    padding-top: 1rem;
+    font-family: 'IBM Plex Mono', monospace;
+    border-bottom: dotted rgb(194, 189, 189) 1px;
+  }
+
+  .nav-bar p:nth-child(2) {
+    padding-right: 0vw;
+    font-size: 0;
+  }
 }
