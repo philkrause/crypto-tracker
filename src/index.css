@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|IBM+Plex+Mono|Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 :root {
-  font: 16px / 1 sans-serif;
+  font: 12px / 1 sans-serif;
 }
 
 html {
@@ -9,4 +11,124 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.header-class {
+  display: flex;
+  height: 8rem;
+  justify-content: center;
+  background-color: rgb(99, 99, 160);
+  color: rgb(255, 255, 255);
+  align-items: center;
+  font-size: 2rem;
+  font-family: 'Poiret One', cursive;
+}
+
+.header-class svg {
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+.navbar-section {
+}
+
+.nav-bar {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  height: 1.4rem;
+  width: 67.5rem;
+  margin-left: 5rem;
+}
+
+.nav-bar p {
+  font-size: 1.5rem;
+  color: black;
+  font-family: 'Fredericka the Great', cursive;
+  text-align: center;
+  padding: 3rem 0rem 1rem 4rem;
+}
+
+.nav-bar p:nth-child(2) {
+  padding-right: 6.5rem;
+}
+.nav-bar p:nth-child(4) {
+  padding-right: 1.5rem;
+}
+
+.nav-bar p:nth-child(5) {
+  padding-right: 1.5rem;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 1rem;
+  border: outset rgb(202, 199, 199) 0.5px;
+  padding-bottom: 1rem;
+  /* text-align: center; */
+  /* align-items: center; */
+}
+
+.stock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0rem 0rem 0;
+  height: 1.3rem;
+  /* text-align: center; */
+}
+.stock-container h1 {
+  text-align: center;
+  height: 1.4rem;
+  width: 2.2rem;
+  align-content: center;
+  padding-top: 1rem;
+  font-family: 'IBM Plex Mono', monospace;
+  border-bottom: dotted rgb(194, 189, 189) 1px;
+}
+.stock-container img {
+  height: 1.4rem;
+  width: 1.4rem;
+  padding-top: 1rem;
+  border-bottom: dotted rgb(194, 189, 189) 1px;
+}
+
+.stock-container h2 {
+  text-align: center;
+  height: 1.4rem;
+  width: 8rem;
+  padding-top: 1rem;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 1.5rem;
+  border-bottom: dotted rgb(194, 189, 189) 1px;
+  border: dotted rgb(252, 0, 0) 0 1px 0 1px;
+}
+
+.stock-container h3 {
+  text-align: left;
+  font-size: 1.5rem;
+  height: 1.4rem;
+  width: 15rem;
+  align-items: center;
+  padding-top: 1rem;
+  font-family: 'IBM Plex Mono', monospace;
+  border-bottom: dotted rgb(194, 189, 189) 1px;
+}
+
+.stock-container p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Inconsolata', monospace;
+  color: black;
+  height: 1.4rem;
+  width: 10rem;
+  align-items: center;
+  padding-top: 1rem;
+  border-bottom: dotted rgb(194, 189, 189) 1px;
 }
