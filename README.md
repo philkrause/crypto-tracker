@@ -1,5 +1,5 @@
 Description
 ===========
 ```
-A react built site used for tracking cryto prices in real-time. 
+A react site used for tracking cryto prices in real-time. 
 ```
